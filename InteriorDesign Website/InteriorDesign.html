@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	
+	<style type="text/css">
+		*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.banner{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(background.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.ur{
+	width: 85%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.ur h1{
+	color: #fff;
+}
+
+.ur ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+}
+.ur ul li a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+}
+.ur ul li::after{
+	content: ``;
+	height: 3px;
+	width: 100px;
+	background: #009688;
+	position: absolute;
+	left: 0;
+	bottom: 10px;
+}
+.content{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: #fff;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+	
+
+	</style>
+
+</head>
+<body>
+<div class="banner">
+	<div class="ur">
+		<h1>INTERIOR DESIGN</h1>
+		
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Bedroom</a></li>
+			<li><a href="#">Dining</a></li>
+			<li><a href="#">Kitchen</a></li>
+			<li><a href="#">Backyard</a></li>
+		</ul>
+	</div>
+	<div class="content">
+		<h1>DESIGN YOUR HOME</h1><br>
+		<p>Determine your budget for designing a home.Think about house placement.Match your home to your lifestyle.Choose the style of your home.<br>Write a brief for the architect.Create your floor plans.</p>
+		<div>
+		<button type="button"><span></span>WATCH MORE</button>
+		<button type="button"><span></span> SUBSCRIBE</button>
+	</div>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script> 
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="data:image/png;base64,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">Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <div class="container"> <i class="fa-solid fa-screencast">
+        <div class="songlist">
+            <h1>Best of NCS - Welcome to spotify</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img src="C:\Users\Shree\.vscode\projects\music\images\cover.jpg">
+                    <span>Slient music - Alan Walker</span>
+                    <span class="songlistplay"><span class="timestamp">01.00<button class="fa-solid fa-circle-play">Play</button></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="C:\Users\Shree\.vscode\projects\music\images\cover.jpg">
+                    <span>Spectar - Alan Walker</span>
+                    <span class="songlistplay"><span class="timestamp">03.14<button class="fa-solid fa-circle-play">Play</button></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="C:\Users\Shree\.vscode\projects\music\images\cover.jpg">
+                    <span>Let me Love you - justin Beiber</span>
+                    <span class="songlistplay"><span class="timestamp">00.14<button class="fa-solid fa-circle-play">Play</button></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="C:\Users\Shree\.vscode\projects\music\images\cover.jpg">
+                    <span>Rolex South BGM</span>
+                    <span class="songlistplay"><span class="timestamp">30.00<button class="fa-solid fa-circle-play">Play</button></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="C:\Users\Shree\.vscode\projects\music\images\cover.jpg">
+                    <span>cartone on cartone - Alan Walker</span>
+                    <span class="songlistplay"><span class="timestamp">04.20<button class="fa-solid fa-circle-play">Play</button></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+
+    </div>
+    
+    <!-- <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" max="100">
+        <div class="icons">
+            <i class="fas fa-3x fa-step-backward" style="color: white; position: absolute; z-index: 2;"></i>
+            <i class="fa-light fa-circle-play" style="color: white;" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" style="color: white;"></i>
+
+        </div> -->
+        
+
+    <script src="script.js"></script>
+
+  <div class="bottom">
+        <input type="range" id="myProgressBar">
+        <div class="songInfo">
+            <img src="travel.jpg" width="100px" height="60px" id="gif">Slient music - Alan Walker
+        </div>
+
+        <div class="button">
+            <button  style="font-weight: bold;">Back</button>
+            <button style="font-weight: bold;" id="masterPlay"  class="bi bi-play-circle">Play</button>
+            <button style="font-weight: bold;" >Next</button>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
